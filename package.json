@@ -2,19 +2,15 @@
   "name": "market-data-utility",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
-    "dev": "node src/index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.24.0",
   "dependencies": {
-    "ccxt": "^4.5.33",
-    "tsc": "^2.0.4"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3"
+    "ccxt": "^4.5.33"
   }
 }
