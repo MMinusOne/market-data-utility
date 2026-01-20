@@ -1,18 +1,9 @@
-interface FetchOptionsBase {
-  exchange: string;
+import { type ConstructorArgs } from "ccxt";
+
+export interface FetchOptions {
+  exchange_name: string;
   symbol: string;
   timeframe: string;
-  apiKey?: string;
-  apiSecret?: string;
-}
-
-interface FetchOptionsWithCandleAmount extends FetchOptionsBase {
+  exchange_config?: ConstructorArgs;
   candle_amount: number;
 }
-
-interface FetchOptionsWithDate extends FetchOptionsBase {
-  start_date: number;
-  end_date: number;
-}
-
-export type FetchOptions = FetchOptionsWithCandleAmount | FetchOptionsWithDate;

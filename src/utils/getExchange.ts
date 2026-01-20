@@ -1,4 +1,4 @@
-import { ConstructorArgs, Exchange } from "ccxt";
+import ccxt, { type ConstructorArgs,  typeExchange } from "ccxt";
 import checkExchangeExists from "./checkExchangeExists";
 
 /**

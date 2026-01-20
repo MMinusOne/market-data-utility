@@ -4,8 +4,8 @@ export * from "./types";
 export { fetch } from "./utilities/fetch";
 
 fetch({
-  exchange: "hi",
-  candle_amount: 1000,
-  symbol: "hello",
+  candle_amount: 6,
+  exchange_name: "binance",
+  symbol: "ETHUSDT",
   timeframe: "1h",
-});
+}).then(console.log);
